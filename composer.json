@@ -1,0 +1,12 @@
+{
+    "name": "lilyrisa/download",
+    "authors": [
+        {
+            "name": "Lilyrisa",
+            "email": "bvminh101299@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
