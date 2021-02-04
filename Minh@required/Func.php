@@ -2,40 +2,7 @@
 
 require_once 'Ddos.php';
 
-function stream_notification_callback($notification_lilyrisa, $severity, $message, $message_lilyrisa, $bytes_transferred, $bytes_max) {
 
-    switch($notification_lilyrisa) {
-        case STREAM_NOTIFY_RESOLVE:
-        case STREAM_NOTIFY_AUTH_REQUIRED:
-        case STREAM_NOTIFY_COMPLETED:
-        case STREAM_NOTIFY_FAILURE:
-        case STREAM_NOTIFY_AUTH_RESULT:
-            var_dump($notification_lilyrisa, $severity, $message, $message_lilyrisa, $bytes_transferred, $bytes_max);
-            /* Ignore */
-            break;
-
-        case STREAM_NOTIFY_REDIRECTED:
-            echo "Being redirected to: ", $message;
-            break;
-
-        case STREAM_NOTIFY_CONNECT:
-            echo "Connected...";
-            break;
-
-        case STREAM_NOTIFY_FILE_SIZE_IS:
-            echo "Got the filesize: ", $bytes_max;
-            break;
-
-        case STREAM_NOTIFY_MIME_TYPE_IS:
-            echo "Found the mime-type: ", $message;
-            break;
-
-        case STREAM_NOTIFY_PROGRESS:
-            echo "Made some progress, downloaded ", $bytes_transferred, " so far";
-            break;
-    }
-    echo "\n";
-}
 
 error_reporting(0);
 

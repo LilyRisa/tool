@@ -12,11 +12,9 @@ function isCommandLineInterface() //determine if PHP is run from the CLI
     return (php_sapi_name() === 'cli');
 }
 //require_once BASEPATH.'/Minh@required/Func.php';
-require_once BASEPATH.'/Minh@required/FunctionCommand.php';
-require_once BASEPATH.'/Minh@required/YoutubeDownloader.class.php';
+include FULLPATH.'/Minh@required/required.php';
 
 if(isCommandLineInterface()){
-    
     function commandRun($args = null){
         if($args == null){
             echo "\n";
@@ -46,6 +44,13 @@ if(isCommandLineInterface()){
             case 'tool':
                 ScanCommand();
                 break;
+            case 'youtube':
+                TubeDown();
+                $cont = readline('Continue (1 or 0): ');
+                if($cont == '1'){
+                    TubeDown();
+                }
+                break;
             default:
                 echo "\n\e[1;31;4mCommand not found error! (^ ^)\e[0m\n";
                 break; 
@@ -55,4 +60,6 @@ if(isCommandLineInterface()){
     
 }else{ //PHP is run from webserver
     echo 'webserver';
+    $handler = new YouTubeDownloader();
+    var_dump($handler);
 }
